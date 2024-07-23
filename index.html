@@ -52,7 +52,7 @@
     </div>
     <div id="id01" class="modal">
   
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form class="modal-content animate" action="" method="post" id="myForm">
           <div class="imgcontainer">
 <h2 class="contact1" id="title">CONTACT</h2>
             
@@ -71,7 +71,7 @@
               
             <!-- <br> <button type="submit"><a href="home.html">SUMBIT</a></button> -->
 
-            <button type="submit" formaction="index.html">SUBMIT</button>
+            <button type="submit">SUBMIT</button>
          
            
           </div>
@@ -85,3 +85,11 @@
     </div>
 </body>
 </html>
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    if (!event.target.checkValidity()) {
+        event.preventDefault(); // Prevent form submission if fields are invalid
+        alert("Please fill out the required fields.");
+    }
+});
+</script>

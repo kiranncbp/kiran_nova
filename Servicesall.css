@@ -1,0 +1,295 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* body {
+    background-color: white;
+} */
+
+.containers {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: rgb(28, 28, 29);
+    font-size: 50px;
+    margin-top: 110px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.content {
+    text-align: left;
+    margin: 25px 0;
+    width: 100%;
+    max-width: 600px;
+    order: 1; /* Ensure content comes first */
+}
+
+.content h2 {
+    color: aqua;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.image {
+    width: 110%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    order: 2; /* Ensure image comes second */
+}
+
+.image img {
+    /* width: 110%;
+    height: auto; */
+    width: 121%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.image:hover {
+    transform: translateX(-10px);
+    transition: 0.4s ease;
+}
+
+.btn {
+    background-color: rgb(9, 9, 9);
+    display: inline-block; /* Ensure it only takes as much space as needed */
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid rgb(23, 22, 23);
+    color: rgb(229, 231, 237);
+    padding: 10px 30px; /* Increased padding */
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* background-color: transparent; */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+    font-size: 20px; /* Increased font size */
+    border-radius: 8px; /* Adjusted rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn:hover {
+    background-color: rgb(148, 141, 141); /* Background color on hover */
+    color: rgb(13, 13, 13); /* Text color on hover */
+    border-color: rgb(88, 84, 84); /* Border color on hover */
+}
+
+.btn::before {
+    color: rgb(21, 21, 21);
+    position: absolute;
+    content: "";
+    border: 1px solid transparent;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #d4101000;
+    z-index: -1;
+    transition: transform 0.7s;
+    transform: scaleX(0);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* .btn:hover::before {
+    transform: scaleX(1);
+} */
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 2%;
+    display: flex;
+    align-items: center;    justify-content: space-between;
+    border: 1px solid white;
+    background-color: white;
+    color:  blueviolet#2109da;
+    position: fixed;
+}
+
+.nav img {
+    max-height: 50px;
+
+   position: absolute;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 40px;
+}
+.nav ul{
+    padding-right: 8px;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: #2109da;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ .nav .icon{
+       font-size:x-large;
+       font-weight: bold; 
+       color: blueviolet;
+      
+    }
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(235, 234, 240);
+    
+}
+.p{
+    font-size: 20px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    
+    align-content: center;
+    /* background: center; */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    /* right: 25px;
+    top: 0; */
+    right: 10px;
+    top: -20px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  Contact  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: auto;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+/* 
+  .contact {
+    text-align: auto;
+    margin: 24px 0 12px 0;
+    position: absolute;
+  } */
+
+
+
+
+
+  .container {
+    right: 10px;
+    top: -20px;
+    padding: 16px;
+   
+  }
+  .container a{
+    text-decoration: none;
+    color: #fefefe;
+
+  }
+
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+/* Set a style for all buttons */
+button {
+     background-color: #0b0b0b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;  
+ /* font-weight: 700;  */
+     font-size: larger; 
+     border: 10px;
+       
+       
+    }
+    
+    .contact1{
+      text-align: center;
+      border: #888;
+  
+  
+  }

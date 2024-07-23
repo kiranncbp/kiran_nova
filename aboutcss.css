@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 2%;
+    display: flex;
+    align-items: center;    justify-content: space-between;
+    border: 1px solid white;
+    background-color: white;
+    color:  blueviolet#2109da;
+    position: fixed;
+}
+
+.nav img {
+    max-height: 50px;
+
+   position: absolute;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 40px;
+}
+.nav ul{
+    padding-right: 8px;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: #2109da;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ .nav .icon{
+       font-size:x-large;
+       font-weight: bold; 
+       color: blueviolet;
+      
+    }
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(21, 235, 235);
+    
+}
+.about-section {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    padding: 10px 0;
+}
+.p
+{
+    font-size: larger;
+color: rgb(46, 47, 47);
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    
+    align-content: center;
+    /* background: center; */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    /* right: 25px;
+    top: 0; */
+    right: 10px;
+    top: -20px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  Contact  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: auto;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+/* 
+  .contact {
+    text-align: auto;
+    margin: 24px 0 12px 0;
+    position: absolute;
+  } */
+
+
+
+
+
+  .container {
+    right: 10px;
+    top: -20px;
+    padding: 16px;
+   
+  }
+  .container a{
+    text-decoration: none;
+    color: #fefefe;
+
+  }
+
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+/* Set a style for all buttons */
+button {
+     background-color: #0b0b0b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;  
+ /* font-weight: 700;  */
+     font-size: larger; 
+     border: 10px;
+       
+       
+    }
+    
+  
+  
+  button:hover {
+    opacity: 0.8;
+  }        
+  .contact1{
+    text-align: center;
+    border: #888;
+
+
+}
